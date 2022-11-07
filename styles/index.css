@@ -239,3 +239,81 @@ section.top-picks {
   color: #666;
   line-height: 1.25;
 }
+
+section.more-discounts {
+  aspect-ratio: 16 / 9;
+  margin-bottom: 20px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  top: -30px;
+  z-index: -1;
+}
+
+.more-discounts img {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 9;
+}
+.more-discounts__body {
+  font-size: 4vmin;
+  left: 13vw;
+  position: absolute;
+  top: 23%;
+  width: 42%;
+  z-index: 11;
+}
+
+.more-discounts__body__percent-off {
+  color: #cc0000;
+  display: grid;
+  font-weight: bold;
+  font-size: 170%;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: repeat(2, 8vw);
+  grid-template-areas: 
+  "mil-number ."
+  "mil-number .";
+}
+
+.more-discounts__body__percent-off p:nth-child(1) {
+  align-self: center;
+  font-size: 270%;
+  grid-area: mil-number;
+  letter-spacing: -7px;
+  margin-right: 8px;
+}
+
+.more-discounts__body__percent-off p:nth-child(2) {
+  align-self: end;
+  position: relative;
+  top: 4px;
+}
+
+.more-discounts__body__percent-off p:nth-child(3) {
+  align-self: start;
+  position: relative;
+  top: -7px;
+}
+
+.more-discounts__body__time-left {
+  font-size: 90%;
+}
+
+.more-discounts__body__general-text {
+  font-size: 90%;
+}
+
+.more-discounts__body__general-text sub {
+  color: #cc0000;
+  font-size: 15px;
+  left: -4px;
+  position: relative;
+  top: -2px;
+}
+
+.more-discounts__body__general-text__logo {
+  color: #cc0000;
+  font-weight: bold;
+}
