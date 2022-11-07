@@ -183,3 +183,59 @@ section.discounts {
   position: relative;
   right: 3px;
 }
+
+section.top-picks {
+  background-color: #333333;
+  margin-bottom: 20px;
+  padding-bottom: 2px;
+}
+
+.top-picks h1 {
+  color: #fff;
+  font-size: 7vw;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.top-picks__items {
+  column-gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(6, 137px);
+  grid-template-rows: 247px;
+  overflow-x: auto;
+  padding: 1em;
+  padding-bottom: 12px;
+  padding-top: 0;
+}
+
+.top-picks__items__item-card {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  text-align: center;
+}
+
+.top-picks__items__item-card img {
+  height: 129px;
+  margin-top: 4px;
+  width: 129px;
+}
+
+.top-picks__items__item-card__price {
+  color: #cc0000;
+  margin-top: 12px;
+}
+
+.top-picks__items__item-card__type {
+  color: #cc0000;
+  font-size: 12px;
+  margin-bottom: 2px;
+}
+
+.top-picks__items__item-card__name {
+  color: #666;
+  line-height: 1.25;
+}
